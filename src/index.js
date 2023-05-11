@@ -18,7 +18,7 @@ import App from './App';
 const plantList = (state = [], action) => {
   switch (action.type) {
     case 'ADD_PLANT':
-      return [ ...state, action.payload ]
+      return action.payload 
     default:
       return state;
   }
